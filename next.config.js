@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const path = require('path');
+
 const nextConfig = {
   reactStrictMode: true,
   // For production, we want to enable server-side rendering
@@ -22,6 +24,12 @@ const nextConfig = {
         'firebase-admin': false,
       };
     }
+    
+    // Configure path aliases
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, './'),
+    };
     
     // Exclude .NO_STATIC_GEN directory from compilation
     config.module.rules.push({
