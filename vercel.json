@@ -5,9 +5,6 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
-  "buildOptions": {
-    "nodeVersion": "18.x"
-  },
   "env": {
     "MONGODB_URI": "mongodb+srv://onsitepcn:1Fq1n6aqKUnL2FsB@cluster0.v9v4u.mongodb.net/awv_app?retryWrites=true&w=majority",
     "NEXT_PUBLIC_FIREBASE_API_KEY": "AIzaSyCUXDjtCkalFKkukgedZePOySwYLimkakM",
